@@ -14,6 +14,10 @@
 		2FCF06241F28361D0040B32B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FCF06231F28361D0040B32B /* Assets.xcassets */; };
 		2FCF06271F28361D0040B32B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FCF06251F28361D0040B32B /* LaunchScreen.storyboard */; };
 		2FCF06321F28361E0040B32B /* CarouselViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF06311F28361E0040B32B /* CarouselViewTests.m */; };
+		2FCF063F1F2836BE0040B32B /* YHHCarouselScorllView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF063E1F2836BE0040B32B /* YHHCarouselScorllView.m */; };
+		2FCF06421F28378A0040B32B /* YHHPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF06411F28378A0040B32B /* YHHPageControl.m */; };
+		2FCF06451F283D050040B32B /* YHHCarouselCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF06441F283D050040B32B /* YHHCarouselCell.m */; };
+		2FDEE02E1F28944500CD271D /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDEE02C1F28944500CD271D /* NSObject+Runtime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		2FCF062D1F28361D0040B32B /* CarouselViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarouselViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCF06311F28361E0040B32B /* CarouselViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarouselViewTests.m; sourceTree = "<group>"; };
 		2FCF06331F28361E0040B32B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FCF063D1F2836BE0040B32B /* YHHCarouselScorllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHHCarouselScorllView.h; sourceTree = "<group>"; };
+		2FCF063E1F2836BE0040B32B /* YHHCarouselScorllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHHCarouselScorllView.m; sourceTree = "<group>"; };
+		2FCF06401F28378A0040B32B /* YHHPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHHPageControl.h; sourceTree = "<group>"; };
+		2FCF06411F28378A0040B32B /* YHHPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHHPageControl.m; sourceTree = "<group>"; };
+		2FCF06431F283D050040B32B /* YHHCarouselCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHHCarouselCell.h; sourceTree = "<group>"; };
+		2FCF06441F283D050040B32B /* YHHCarouselCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHHCarouselCell.m; sourceTree = "<group>"; };
+		2FDEE02C1F28944500CD271D /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
+		2FDEE02D1F28944500CD271D /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +95,15 @@
 			children = (
 				2FCF061A1F28361C0040B32B /* AppDelegate.h */,
 				2FCF061B1F28361C0040B32B /* AppDelegate.m */,
+				2FCF063C1F2836500040B32B /* CarouselView */,
 				2FCF061D1F28361C0040B32B /* ViewController.h */,
 				2FCF061E1F28361D0040B32B /* ViewController.m */,
 				2FCF06201F28361D0040B32B /* Main.storyboard */,
 				2FCF06231F28361D0040B32B /* Assets.xcassets */,
 				2FCF06251F28361D0040B32B /* LaunchScreen.storyboard */,
 				2FCF06281F28361D0040B32B /* Info.plist */,
+				2FDEE02D1F28944500CD271D /* NSObject+Runtime.h */,
+				2FDEE02C1F28944500CD271D /* NSObject+Runtime.m */,
 				2FCF06171F28361C0040B32B /* Supporting Files */,
 			);
 			path = CarouselView;
@@ -109,6 +124,19 @@
 				2FCF06331F28361E0040B32B /* Info.plist */,
 			);
 			path = CarouselViewTests;
+			sourceTree = "<group>";
+		};
+		2FCF063C1F2836500040B32B /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				2FCF063D1F2836BE0040B32B /* YHHCarouselScorllView.h */,
+				2FCF063E1F2836BE0040B32B /* YHHCarouselScorllView.m */,
+				2FCF06431F283D050040B32B /* YHHCarouselCell.h */,
+				2FCF06441F283D050040B32B /* YHHCarouselCell.m */,
+				2FCF06401F28378A0040B32B /* YHHPageControl.h */,
+				2FCF06411F28378A0040B32B /* YHHPageControl.m */,
+			);
+			name = CarouselView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,8 +244,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FCF061F1F28361D0040B32B /* ViewController.m in Sources */,
+				2FCF06451F283D050040B32B /* YHHCarouselCell.m in Sources */,
+				2FDEE02E1F28944500CD271D /* NSObject+Runtime.m in Sources */,
+				2FCF06421F28378A0040B32B /* YHHPageControl.m in Sources */,
 				2FCF061C1F28361C0040B32B /* AppDelegate.m in Sources */,
 				2FCF06191F28361C0040B32B /* main.m in Sources */,
+				2FCF063F1F2836BE0040B32B /* YHHCarouselScorllView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +450,7 @@
 				2FCF06381F28361E0040B32B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FCF06391F28361E0040B32B /* Build configuration list for PBXNativeTarget "CarouselViewTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +459,7 @@
 				2FCF063B1F28361E0040B32B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
