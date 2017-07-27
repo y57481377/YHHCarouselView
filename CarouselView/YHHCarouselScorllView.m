@@ -41,8 +41,7 @@ static NSString *YHHCarouseIdentifier = @"YHHCarouseIdentifierCell";
     [_collectionView registerClass:[YHHCarouselCell class] forCellWithReuseIdentifier:YHHCarouseIdentifier];
     [self addSubview:_collectionView];
     
-    _pageControl = [[YHHPageControl alloc] initWithFrame:CGRectMake(0, 0, 150, 30)];
-    _pageControl.backgroundColor = [UIColor redColor];
+    _pageControl = [[YHHPageControl alloc] initWithFrame:CGRectMake(50, 100, 200, 40)];
     [self addSubview:_pageControl];
     
     NSArray *arr = [UIPageControl getAllIvars];
@@ -100,7 +99,7 @@ static NSString *YHHCarouseIdentifier = @"YHHCarouseIdentifierCell";
     if (_imageCount > 1) {
         [self addTimer];
         _collectionView.scrollEnabled = YES;
-        _pageControl.numberOfPages = images.count;
+        _pageControl.numberOfPages = 5;
     }else {
         _collectionView.scrollEnabled = NO;
     }
@@ -220,5 +219,18 @@ static NSString *YHHCarouseIdentifier = @"YHHCarouseIdentifierCell";
         cell.image = _images[indexPath.row - 1];
     }
     return cell;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    NSLog(@"%@", NSStringFromCGRect(_pageControl.frame));
+    if (self.scrollDirection == UICollectionViewScrollDirectionVertical) {
+        CGFloat offset = _pageControl.frame.size.width;
+        _pageControl.transform = CGAffineTransformMakeRotation(M_PI_2);
+        _pageControl.center = CGPointMake(self.frame.size.width - offset - 10, self.frame.size.height / 2);
+    }else {
+        _pageControl.center = CGPointMake(self.frame.size.width / 2, self.frame.size.height - 12);
+    }
 }
 @end

@@ -10,7 +10,9 @@
 
 @interface YHHPageControl : UIPageControl
 
-@property (strong, nonatomic) UIImage *imagev;
+@property (strong, nonatomic) UIImage *imageNormal;
+@property (strong, nonatomic) UIImage *imageHighlight;
 
+@property (assign, nonatomic) CGSize itemSize;
 
 @end
